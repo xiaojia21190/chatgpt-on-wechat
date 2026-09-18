@@ -54,7 +54,7 @@ def test_web_sse_forwards_only_sanitized_retrieval_metadata():
 
 
 def test_web_and_desktop_render_the_retrieval_event():
-    web = (ROOT / "channel/web/static/js/console.js").read_text(encoding="utf-8")
+    web = (ROOT / "channel/web/static/js/chat/send.js").read_text(encoding="utf-8")
     desktop_store = (
         ROOT / "desktop/src/renderer/src/store/chatStore.ts"
     ).read_text(encoding="utf-8")
